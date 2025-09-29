@@ -1,2 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Gidole&family=Luxurious+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
+.web-button {
+  --m-border-radius: 0.5rem;
+  --m-border-size: 0.0625rem;
+  background-color: (
+    hsl(340, 82%, 56%),
+  );
+  background-origin: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-inline: 0.875rem;
+  padding-block: 0.4375rem;
+  min-block-size: 2.5rem;
+  border-radius: var(--m-border-radius);
+  border: solid var(--m-border-size) transparent;
+  text-align: center;
+  transition: all 0.3s ease;
+  -webkit-user-select: none;
+  user-select: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  text-decoration: none !important;
+  white-space: pre;
+  cursor: pointer;
+}
+
+.web-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.web-button:active {
+  transform: translateY(0);
+}
